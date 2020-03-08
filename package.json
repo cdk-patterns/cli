@@ -6,7 +6,7 @@
   "bin": {
     "cdkp": "./bin/run"
   },
-  "bugs": "https://github.com/cdk-patterns",
+  "bugs": "https://github.com/cdk-patterns/cli/issues",
   "dependencies": {
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.14.0",
@@ -57,7 +57,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "https://github.com/cdk-patterns/serverless",
+  "repository": "https://github.com/cdk-patterns/cli",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
