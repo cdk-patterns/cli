@@ -1,10 +1,14 @@
 cdkp
 ====
 
-CLI tool for cdkpatterns.com to make it as simple as one command to download and learn a new pattern. This tool will only download the one pattern you are interested in rather than the whole repo.
-
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Downloads](https://img.shields.io/npm/dt/cdkp)](https://npmjs.org/package/cdkp)
+
+CLI tool for cdkpatterns.com to make it as simple as one command to download and learn a new pattern. This tool will only download the one pattern you are interested in rather than the whole repo.
+
+### Three Simple Commands To Deploy A pattern
+
+<img src="https://raw.githubusercontent.com/cdk-patterns/cli/master/img/commands.png" alt="three simple commands" width="300px" />
 
 
 ## Requirements
