@@ -56,7 +56,7 @@ export default class Init extends Command {
 
     this.getAvailablePatterns().then(async (patterns)=> {
       if(!patterns.includes(pattern)){
-        this.log(pattern+'is not a valid pattern, try cdkp list to see available patterns')
+        this.log(pattern+' is not a valid pattern, try cdkp list to see available patterns')
         return;
       }
 
@@ -83,7 +83,7 @@ export default class Init extends Command {
           fs.removeSync(path.join(base_dir, pattern))
   
           if(lang === 'typescript'){
-            this.log('*** Installing Dependencies and Building ***');
+            this.log('*** Installing Dependencies and Building (This can take a couple of mins depending on pattern) ***');
             execSync('npm i && npm run build', {'cwd': pattern});
             this.log('*** Complete, pattern is inside '+base_dir+' folder ***\n');
             this.log('Useful Commands:');
@@ -93,6 +93,7 @@ export default class Init extends Command {
             this.log('- "npm run deploy" to deploy to aws');
           } else {
             this.log('*** Complete, pattern is inside '+base_dir+' folder ***\n');
+            this.log('You still need to create your venv and install the dependencies as per the readme');
             this.log('Useful Commands:');
             this.log('- "cd '+pattern+'" to open the pattern in your cli');
           }
