@@ -1,7 +1,7 @@
 {
   "name": "cdkp",
   "description": "CLI tool for cdk patterns",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "cdkpatterns",
   "bin": {
     "cdkp": "./bin/run"
