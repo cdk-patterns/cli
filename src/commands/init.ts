@@ -9,7 +9,7 @@ export default class Init extends Command {
 
   static examples = [
     `$ cdkp init the-big-fan
-  *** Dowloading Pattern ***
+  *** Downloading Pattern ***
   From https://github.com/cdk-patterns/serverless
     * [new branch]      master     -> origin/master
   From https://github.com/cdk-patterns/serverless
