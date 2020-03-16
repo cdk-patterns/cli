@@ -70,7 +70,7 @@ export default class Init extends Command {
           }
   
           fs.emptyDirSync(pattern)
-          this.log('*** Dowloading Pattern ***');
+          this.log('*** Downloading Pattern ***');
           execSync('git init', {'cwd': pattern});
           execSync('git remote add origin -f https://github.com/cdk-patterns/serverless', {'cwd': pattern});
           execSync('git config core.sparsecheckout true', {'cwd': pattern});
