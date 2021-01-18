@@ -23,7 +23,7 @@ export default class List extends Command {
 
     let that = this;
 
-    https.get('https://raw.githubusercontent.com/cdk-patterns/serverless/master/info.json', (resp:any) => {
+    https.get('https://raw.githubusercontent.com/cdk-patterns/serverless/main/info.json', (resp:any) => {
       let data = '';
 
       // A chunk of data has been recieved.
