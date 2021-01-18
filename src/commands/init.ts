@@ -11,9 +11,9 @@ export default class Init extends Command {
     `$ cdkp init the-big-fan
   *** Downloading Pattern ***
   From https://github.com/cdk-patterns/serverless
-    * [new branch]      master     -> origin/master
+    * [new branch]      main     -> origin/main
   From https://github.com/cdk-patterns/serverless
-    * branch            master     -> FETCH_HEAD
+    * branch            main     -> FETCH_HEAD
   *** Tidying up file structure ***
   *** Installing Dependencies and Building ***
   npm WARN the-big-fan@0.1.0 No repository field.
@@ -75,7 +75,7 @@ export default class Init extends Command {
           execSync('git remote add origin -f https://github.com/cdk-patterns/serverless', {'cwd': pattern});
           execSync('git config core.sparsecheckout true', {'cwd': pattern});
           execSync('echo '+pattern+'/'+lang+' >> .git/info/sparse-checkout', {'cwd': pattern});
-          execSync('git pull origin master', {'cwd': pattern});
+          execSync('git pull origin main', {'cwd': pattern});
   
           this.log('*** Tidying up file structure ***');
           fs.removeSync(path.join(base_dir, '.git'))
@@ -109,7 +109,7 @@ export default class Init extends Command {
 
   private getAvailablePatterns():Promise<string[]>  {
     return new Promise<string[]>((resolve, reject) => {
-      https.get('https://raw.githubusercontent.com/cdk-patterns/serverless/master/info.json', (resp:any) => {
+      https.get('https://raw.githubusercontent.com/cdk-patterns/serverless/main/info.json', (resp:any) => {
       let data = '';
 
       // A chunk of data has been recieved.
